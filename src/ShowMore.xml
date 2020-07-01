@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id=".showmore.ShowMore" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Show More</name>
+    <description>Expand and truncate longer text attributes</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="stringAttribute" type="attribute" required="true">
+                <caption>Text Attribute</caption>
+                <description>Path to string attribute</description>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                </attributeTypes>
+            </property>
+            <property key="numberOfCharacters" type="integer" required="true" defaultValue="50">
+                <caption>Show Characters</caption>
+                <description>Number of characters to display before 'show more' is clicked</description>
+            </property>
+            <property key="moreLinkText" type="string" required="false" defaultValue="show more">
+                <caption>'More' Link Text</caption>
+                <description>Text displayed for 'more' link - default text is 'show more'</description>
+            </property>
+            <property key="lessLinkText" type="string" required="false" defaultValue="show less">
+                <caption>'Less' Link Text</caption>
+                <description>Text displayed for 'less' link - default text is 'show less'</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
