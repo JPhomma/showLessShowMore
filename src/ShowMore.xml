@@ -19,14 +19,26 @@
                 <caption>Show Characters</caption>
                 <description>Number of characters to display before 'show more' is clicked</description>
             </property>
-            <property key="moreLinkText" type="string" required="false" defaultValue="show more">
+            <property key="moreLinkText" type="textTemplate" required="true">
                 <caption>'More' Link Text</caption>
-                <description>Text displayed for 'more' link - default text is 'show more'</description>
+                <description>Text displayed for 'more' link</description>
+                <translations>
+					<translation lang="en_US">show more</translation>
+				</translations>
             </property>
-            <property key="lessLinkText" type="string" required="false" defaultValue="show less">
+            <property key="lessLinkText" type="textTemplate" required="true">
                 <caption>'Less' Link Text</caption>
-                <description>Text displayed for 'less' link - default text is 'show less'</description>
+                <description>Text displayed for 'less' link</description>
+                <translations>
+					<translation lang="en_US">show less</translation>
+				</translations>
             </property>
+        </propertyGroup>     
+        <propertyGroup caption="Visibility">
+                <systemProperty key="Visibility"/>
+        </propertyGroup>
+        <propertyGroup caption="Label">
+                <systemProperty key="Label"/>
         </propertyGroup>
     </properties>
 </widget>

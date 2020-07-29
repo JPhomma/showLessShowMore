@@ -68,7 +68,7 @@ class ShowMore extends Component<ShowMoreContainerProps, IShowMoreState> {
     
     render(): ReactNode {
         const textToDisplay = this.state.displayText !== undefined ? this.state.displayText : this.props.stringAttribute.value;
-        const linkText = this.state.isMoreClicked ? this.props.lessLinkText : this.props.moreLinkText;
+        const linkText = this.state.isMoreClicked ? this.props.lessLinkText?.value : "..."+this.props.moreLinkText?.value;
         return <TextContainer 
                     stringAttribute={textToDisplay}
                     linkText={linkText}

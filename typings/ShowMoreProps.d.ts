@@ -4,7 +4,7 @@
  * @author Mendix UI Content Team
  */
 import { CSSProperties } from "react";
-import { EditableValue } from "mendix";
+import { DynamicValue, EditableValue } from "mendix";
 
 export interface ShowMoreContainerProps {
     name: string;
@@ -13,8 +13,8 @@ export interface ShowMoreContainerProps {
     tabIndex: number;
     stringAttribute: EditableValue<string>;
     numberOfCharacters: number;
-    moreLinkText?: string;
-    lessLinkText?: string;
+    moreLinkText: DynamicValue<string>;
+    lessLinkText: DynamicValue<string>;
 }
 
 export interface ShowMorePreviewProps {
