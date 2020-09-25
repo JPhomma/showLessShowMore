@@ -1,6 +1,5 @@
 import { Component, ReactNode, createElement } from "react";
 
-
 export interface TextContainerProps {
     stringAttribute?: string;
     linkText?: string;
@@ -8,11 +7,10 @@ export interface TextContainerProps {
 }
 
 
-
 export class TextContainer extends Component<TextContainerProps> {
-
+ 
     render(): ReactNode {
-        const text = this.props.stringAttribute?.valueOf();
-        return <div>{text}...<a onClick={this.props.toggleText}>{this.props.linkText}</a></div>;
+        const content = this.props.stringAttribute?.valueOf() || "";
+            return <div>{content}<a onClick={this.props.toggleText}>{this.props.linkText}</a></div>;
+        }    
     }
-}

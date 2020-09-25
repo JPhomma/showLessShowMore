@@ -1,8 +1,8 @@
 {
   "name": "showmore",
   "widgetName": "ShowMore",
-  "version": "1.0.0",
-  "description": "Expand and truncate longer text attributes",
+  "version": "1.1.0",
+  "description": "Expand and truncate longer text and html attributes",
   "copyright": "Mendix 2020",
   "author": "Jounior Phomma",
   "config": {
